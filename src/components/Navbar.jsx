@@ -20,10 +20,10 @@ export default function Navbar() {
           <span class="ml-3 text-xl">Aanandita Diwan</span>
         </a>
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">First Link</a>
-          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Second Link</a>
-          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Third Link</a>
-          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Fourth Link</a>
+          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Linkedin</a>
+          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Github</a>
+          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Email</a>
+          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Phone</a>
         </nav>
         <button onClick={darkModeHandler} >
           { dark && <IoSunny /> }
