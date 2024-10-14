@@ -1,64 +1,136 @@
-export default function Feature() {
+import React from 'react';
+
+export default function Feature({ languages, frameworks, tools, dataStore, platforms, webDev }) {
+  const categories = [
+    { title: "Languages", skills: languages },
+    { title: "Frameworks", skills: frameworks },
+    { title: "Tools", skills: tools },
+    { title: "Data Store", skills: dataStore },
+    { title: "Platforms", skills: platforms },
+    { title: "Web Development", skills: webDev },
+  ];
+
+  // Function to return SVG based on title
+  const getSVG = (title) => {
+    switch (title) {
+      case "Languages":
+        return (
+          <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-6 h-6"
+            viewBox="0 0 24 24"
+          >
+            <path d="M3 3h18v18H3z"></path>
+            <path d="M6 9h12M6 15h12M6 12h12"></path>
+          </svg>
+        );
+      case "Frameworks":
+        return (
+          <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-6 h-6"
+            viewBox="0 0 24 24"
+          >
+            <path d="M3 3h18v18H3z"></path>
+            <path d="M3 9h18M3 15h18"></path>
+          </svg>
+        );
+      case "Tools":
+        return (
+          <svg
+            fill="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-6 h-6"
+            viewBox="0 0 24 24"
+          >
+            <path d="M9 5l-4 4 4 4M5 9l4-4M19 19l-4-4 4-4M15 15l4 4"></path>
+          </svg>
+        );
+      case "Data Store":
+        return (
+          <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-6 h-6"
+            viewBox="0 0 24 24"
+          >
+            <path d="M3 3h18v18H3z"></path>
+            <path d="M12 12h8M4 12h8M12 6h8M12 18h8"></path>
+          </svg>
+        );
+      case "Platforms":
+        return (
+          <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-6 h-6"
+            viewBox="0 0 24 24"
+          >
+            <path d="M2 2h20v20H2z"></path>
+            <path d="M6 12h12M6 8h12M6 16h12"></path>
+          </svg>
+        );
+      case "Web Development":
+        return (
+          <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-6 h-6"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 2L2 22h20L12 2z"></path>
+          </svg>
+        );
+      default:
+        return null;
+    }
+  };
+
   return (
-    <section class="text-gray-600 body-font dark:text-gray-400 dark:bg-gray-900">
-      <div class="container px-5 pt-10 pb-14 mx-auto">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20 dark:text-white">Raw Denim Heirloom Man Braid
-          <br class="hidden sm:block" />Selfies Wayfarers
+    <section className="text-gray-600 body-font dark:text-gray-400 dark:bg-gray-900">
+      <div className="container px-5 pt-10 pb-14 mx-auto">
+        <h1 className="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20 dark:text-white">
+          Skills
         </h1>
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-          <div class="p-4 md:w-1/3 flex">
-            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0 dark:bg-gray-800 dark:text-indigo-400">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
+        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+          {categories.map(({ title, skills }) => (
+            <div key={title} className="p-4 md:w-1/6 flex">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0 dark:bg-gray-800 dark:text-indigo-400">
+                {getSVG(title)} {/* Render SVG based on title */}
+              </div>
+              <div className="flex-grow pl-6">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-2 dark:text-white">
+                  {title}
+                </h2>
+                <ul className="list-disc list-inside leading-relaxed text-base">
+                  {skills.map((skill, index) => (
+                    <li key={index}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div class="flex-grow pl-6">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2 dark:text-white">Shooting Stars</h2>
-              <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center dark:text-indigo-400">Learn More
-                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/3 flex">
-            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0 dark:bg-gray-800 dark:text-indigo-400">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <circle cx="6" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-              </svg>
-            </div>
-            <div class="flex-grow pl-6">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2 dark:text-white">The Catalyzer</h2>
-              <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center dark:text-indigo-400">Learn More
-                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/3 flex">
-            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0 dark:bg-gray-800 dark:text-indigo-400">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-            <div class="flex-grow pl-6">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2 dark:text-white">Neptune</h2>
-              <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center dark:text-indigo-400">Learn More
-                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

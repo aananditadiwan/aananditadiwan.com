@@ -1,12 +1,12 @@
 import { Hero, Feature, Education, Skills, Experience, Testimonial } from "./components";
+import * as data from "./components/TextData"
 
 export default function App() {
-  let designation = "Full Stack Software Engineer"
-  let summary= "I am passionate about writing clean code with focus on scalability."
+  
   return (
     <>
-      <Hero title={designation} summary={summary}/>
-      <Feature />
+      <Hero title={data.designation} summary={data.summary}/>
+      <Feature languages={data.languages} frameworks={data.frameworks} tools={data.tools} dataStore={data.dataStore} platforms={data.platforms} webDev={data.webDev}/>
       <Education />
       <Skills />
       <Experience />

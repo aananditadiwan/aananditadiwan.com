@@ -20,10 +20,36 @@ export default function Navbar() {
           <span class="ml-3 text-xl">Aanandita Diwan</span>
         </a>
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Linkedin</a>
-          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Github</a>
-          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Email</a>
-          <a class="mr-5 hover:text-gray-900 dark:hover:text-white">Phone</a>
+        <p class="mr-5 hover:text-gray-900 dark:hover:text-white">
+              <a
+                  href="https://www.linkedin.com/in/aananditadiwan"
+                  className="hover:underline"
+                  target="_blank"
+                  rel="noreferrer"
+              >
+                  <i class="fab fa-linkedin mr-2"></i>Linkedin
+              </a>
+          </p>
+          <p class="mr-5 hover:text-gray-900 dark:hover:text-white">
+              <a
+                  href="https://www.github.com/aananditadiwan"
+                  className="hover:underline"
+                  target="_blank"
+                  rel="noreferrer"
+              >
+                  <i class="fab fa-github mr-2"></i>Github
+              </a>
+          </p>
+          <p class="mr-5 hover:text-gray-900 dark:hover:text-white">
+              <a href="mailto:iam@aananditadiwan.com" class="hover:underline">
+                  <i class="fas fa-envelope mr-2"></i>Email
+              </a>
+          </p>
+          <p class="mr-5 hover:text-gray-900 dark:hover:text-white">
+              <a href="tel:+919990864545" class="hover:underline">
+                  <i class="fas fa-phone mr-2"></i>Phone
+              </a>
+          </p>
         </nav>
         <button onClick={darkModeHandler} >
           { dark && <IoSunny /> }
