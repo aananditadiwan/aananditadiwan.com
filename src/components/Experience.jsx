@@ -1,48 +1,154 @@
 export default function Experience() {
-    return (
-        <section className="dark:bg-gray-900">
-            <div className="container mx-auto px-32 py-14">
+  return (
+    <section className="dark:bg-gray-900">
+      <div className="container mx-auto px-32 py-14">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20 dark:text-white">
+          Experience
+          {/* <br class="hidden sm:block" />Selfies Wayfarers */}
+        </h1>
+        <ol class="relative border-s border-gray-200 dark:border-gray-700">
+          <li class="mb-10 ms-6">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <div class="mb-6"> 
+                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                    BitsFlow Technologies
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium mx-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                    Latest
+                    </span>
+                </h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Software Development Engineer, Jan 2023
+                </time>
 
-                <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20 dark:text-white">Raw Denim Heirloom Man Braid
-                    <br class="hidden sm:block" />Selfies Wayfarers
-                </h1>
-                <ol class="relative border-s border-gray-200 dark:border-gray-700">
-                    <li class="mb-10 ms-6">
-                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                            </svg>
-                        </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Application UI v2.0.0 <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span></h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 13th, 2022</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-                        <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
-                            <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
-                        </svg> Download ZIP</a>
-                    </li>
-                    <li class="mb-10 ms-6">
-                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                            </svg>
-                        </span>
-                        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Figma v1.3.0</h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 7th, 2021</time>
-                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-                    </li>
-                    <li class="ms-6">
-                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                            </svg>
-                        </span>
-                        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.2</h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2nd, 2021</time>
-                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-                    </li>
-                </ol>
+                <div class="mb-4">
+                    <h4 class="text-md font-semibold text-gray-800 dark:text-gray-200">Loan Management System</h4>
+                    <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                    End-to-end loan processing, including customer and loan booking, loan drafting, initialization, and disbursement with an author-maker system for secure handling.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-500 dark:text-gray-400">
+                    <li>Reduced mandate approval time by 50% by automating backend file validation for bulk authoring.</li>
+                    <li>Minimized manual entry errors by 25% through the development of user-friendly frontend interfaces for receipt capture and backend batch creation.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h4 class="text-md font-semibold text-gray-800 dark:text-gray-200">Finfinity</h4>
+                    <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Customer Acquisition System: A business-generating product that connects high-probability loan leads from various sources to banks, driving revenue growth.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-500 dark:text-gray-400">
+                    <li>Reduced interaction delays by 30% by refactoring frontend components and enhancing backend lead management.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-md font-semibold text-gray-800 dark:text-gray-200">ColApp</h4>
+                    <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Loan collection app: App for bank collectors, available in web and mobile versions, with offline support via VueX and SQLite for efficient recovery of defaulted loans.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-500 dark:text-gray-400">
+                    <li>Increased payment processing speed by 20% by integrating Razorpay for sending payment links via email and generating QR codes.</li>
+                    </ul>
+                </div>
             </div>
-        </section>
-    )
+          </li>
+
+
+          <li class="mb-10 ms-6">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <div class="mb-6"> 
+                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                    Thoughtworks
+                </h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                Software Development Engineer Intern, May 2022 - Dec 2022
+                </time>
+
+                <div class="mb-4">
+                    <h4 class="text-md font-semibold text-gray-800 dark:text-gray-200">ThoughtVerse:</h4>
+                    <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                    PoC of Metaverse for new Thoughtworks office, in a team of 4, with decentralized authentication, deep linking, voice, and screen sharing using Mirror and Agora, deployed on GCP. Using Unity Game Engine and C#. </p>
+                </div>
+
+                <div class="mb-4">
+                    <h4 class="text-md font-semibold text-gray-800 dark:text-gray-200">SecretSanta Script</h4>
+                    <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Single-handedly created from scratch a script that anonymously pairs users and shares Secret Santa wish lists, adhering to company security guidelines. Implemented in Google Apps Script using JavaScript, HTML, CSS.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-md font-semibold text-gray-800 dark:text-gray-200">ArtGallery</h4>
+                    <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Created an internal portal in a team of 7 for colleagues to socialize. Features include: liking photographs uploaded by other team members, signup, and login, following Test-Driven Development. Using Java, Spring Boot, JPA, React, HTML, CSS, Postman API, PostgreSQL, Heroku, and Netlify.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-md font-semibold text-gray-800 dark:text-gray-200">ARK Wiki</h4>
+                    <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Collaborated with stakeholders from China to proofread build guides for teams developing iOS and Android apps.</p>                
+                </div>
+            </div>
+          </li>
+
+          <li class="mb-10 ms-6">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <div class="mb-6"> 
+                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                    StepUp Era
+                </h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Software Development Engineer Intern, 2021
+                </time>
+
+                <div class="mb-4">
+                    <ul class="list-disc pl-5 text-gray-500 dark:text-gray-400">
+                    <li>Developed scripts to assist Human Resources supervisor to automate onboarding of new members.</li>
+                    <li>Saved 250 hrs/yr for organization by developing an efficient record keeping & maintenance format, which saved 2hr/manager/week for a team of 5 managers.</li>
+                    <li>Communicated with potential clients to realize successful conversion by recommending right StepUp Era programs suitable to client needs.</li>
+                    <li>Awarded Star Performer for exceptional contribution.</li>
+                    </ul>
+                </div>
+
+            </div>
+          </li>
+
+
+
+
+         
+          
+        </ol>
+      </div>
+    </section>
+  );
 }
