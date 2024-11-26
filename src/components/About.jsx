@@ -107,11 +107,11 @@ export default function Feature({ languages, frameworks, tools, dataStore, platf
 
   return (
     <section className="text-gray-600 body-font dark:text-gray-400 dark:bg-gray-900">
-      <div className="container px-5 pt-10 pb-14 mx-auto">
+      <div className="container mx-auto lg:px-32 lg:py-14 pt-10 pb-14">
         <h1 className="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20 dark:text-white">
           Skills
         </h1>
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+        <div className="flex flex-wrap flex-col lg:flex-row md:space-y-0 space-y-6 sm:-m-4 m-16">
           {categories.map(({ title, skills }) => (
             <div key={title} className="p-4 md:w-1/6 flex">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0 dark:bg-gray-800 dark:text-indigo-400">

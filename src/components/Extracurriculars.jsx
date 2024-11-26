@@ -32,12 +32,12 @@ export default function Extracurriculars() {
   ];
 
   return (
-    <section className="dark:bg-gray-900 bg-white py-14">
-      <div className="container mx-auto px-8">
+    <section className="dark:bg-gray-900 bg-white">
+      <div className="container mx-auto px-10 lg:px-32 lg:py-14">
         <h2 className="text-2xl sm:text-3xl font-medium title-font text-center text-gray-900 dark:text-white mb-10">
           Extracurriculars
         </h2>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 lg:mx-52">
           {activities.map((activity, index) => (
             <div key={index} className="flex items-start">
               <div className="text-3xl mr-4">{activity.icon}</div>

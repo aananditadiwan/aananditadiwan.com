@@ -5,8 +5,8 @@ export default function Skills() {
         <section className="dark:bg-gray-900">
             <div className="container mx-auto px-32 py-14 flex flex-wrap">
                 <div className="w-full">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20 dark:text-white">Raw Denim Heirloom Man Braid
-                        <br class="hidden sm:block" />Selfies Wayfarers
+                    <h1 className="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20 dark:text-white">Raw Denim Heirloom Man Braid
+                        <br className="hidden sm:block" />Selfies Wayfarers
                     </h1>
                 </div>
                 <div className="w-1/2 px-3">

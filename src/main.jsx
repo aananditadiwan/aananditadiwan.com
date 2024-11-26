@@ -35,6 +35,6 @@ createRoot(document.getElementById("root")).render(
     <Navbar />
     {/* <RouterProvider router={router} /> */}
     <App />
-    <Footer/>
+    <Footer />
   </StrictMode>
 );
