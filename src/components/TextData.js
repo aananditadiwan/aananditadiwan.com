@@ -4,5 +4,5 @@ export let languages= ["Javascript","Python","SQL"];
 export let frameworks = ["Vue","React","Ionic","Django","Django REST"]
 export let tools = ["Postman","Git", "Docket","Jira","Trello","Asana"]
 export let dataStore = ["PostgreSQL","MySQL"]
-export let platforms = ["GitHub","GitLab","Heroku","GCP"]
+export let platforms = ["GitHub","GitLab","Heroku","GCP", "AWS"]
 export let webDev = ["HTML","CSS","Tailwind CSS","Bootstrap"]

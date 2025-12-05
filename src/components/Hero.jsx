@@ -9,13 +9,13 @@ export default function Hero({ title, summary }) {
           <p className="mb-8 leading-relaxed">{summary}</p>
           <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              <a href="\AananditaDiwanResume.pdf" download >Resume</a>
+              <a href=".\AananditaDiwanResume.pdf" download >Resume</a>
             </button>
           </div>
         </div>
         <div className="lg:max-w-lg">
           {/* <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" /> */}
-          <img className="object-cover object-center rounded" alt="hero" src="/annie.png" />
+          <img className="object-cover object-center rounded" alt="hero" src="./annie.png" />
         </div>
       </div>
     </section>
