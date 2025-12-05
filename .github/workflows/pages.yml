@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ "main" ]   # change if your repo uses another branch
+    branches: [ "master" ]    # change if your repo uses a different branch
 
 permissions:
   contents: write
@@ -14,14 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 18
+
       - run: npm install
       - run: npm run build
+
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist      # change to "dist" if you use Vite
+          path: dist      # ✔ Vite output folder
 
   deploy:
     needs: build
