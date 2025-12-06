@@ -32,6 +32,7 @@ npm run build:github
 
 ## This site is Live at  :
 
-[GitHub Pages](https://aananditadiwan.github.io)
+[GitHub Pages](https://aananditadiwan.github.io/aananditadiwan.com)
 
 [My Domain](https://www.aananditadiwan.com)
+
