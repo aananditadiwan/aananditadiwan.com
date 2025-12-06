@@ -111,19 +111,19 @@ export default function Feature({ languages, frameworks, tools, dataStore, platf
         <h1 className="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20 dark:text-white">
           Skills
         </h1>
-        <div className="flex flex-wrap flex-col lg:flex-row md:space-y-0 space-y-6 sm:-m-4 m-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {categories.map(({ title, skills }) => (
-            <div key={title} className="p-4 md:w-1/6 flex">
+            <div key={title} className="flex p-4">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0 dark:bg-gray-800 dark:text-indigo-400">
-                {getSVG(title)} {/* Render SVG based on title */}
+                {getSVG(title)}
               </div>
-              <div className="flex-grow pl-6">
+              <div className="flex-grow pl-4">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-2 dark:text-white">
                   {title}
                 </h2>
                 <ul className="list-disc list-inside leading-relaxed text-base">
                   {skills.map((skill, index) => (
-                    <li key={index}>{skill}</li>
+                    <li key={index} className="whitespace-nowrap">{skill}</li>
                   ))}
                 </ul>
               </div>
