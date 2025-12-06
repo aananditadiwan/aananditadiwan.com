@@ -1,9 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  base: '/aananditadiwan.com/'
-})
+export default defineConfig(({ mode }) => {
+  // If mode is 'github', use the GitHub Pages subfolder
+  const basePath = mode === 'github' ? '/aananditadiwan.com/' : '/';
 
+  return {
+    plugins: [react()],
+    base: basePath,
+  };
+});
